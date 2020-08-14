@@ -42,27 +42,17 @@ function updateFilters() {
 
   // Call function to apply all filters and rebuild the table
   filterTable(filters);
-/////////////////////////////////////////////////////
-  //used for Testing remove for final copy
-  
-  //console.log(filters);
-  //var DictonaryLength = 0
-  //DictonaryLength = Object.keys(filters).length
-  //console.log(DictonaryLength)
 }
 
 function filterTable() {
 
   // Set the filteredData to the tableData
   let filteredData = tableData;
-  // Loop through all of the filters and keep any data that
-  
-  // matches the filter values
   let keys = Object.keys(filters)
   let values = Object.values(filters)
   let numberOfFilters = keys.length
-
-
+  // Loop through all of the filters and keep any data that
+  // matches the filter values
   for (i = 0; i < numberOfFilters; i++){    
     let filterOn = keys[i];
     let filterValue = values[i];

@@ -18,9 +18,11 @@
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
     </div>
-    <div class="jumbotron">
-        <h1 class="display-4">The Truth is Out There</h1>
-    </div>  
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">The Truth is Out There</h1>
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="row">
           <div class="col-md-4">
@@ -39,31 +41,43 @@
                 <form class="bg-dark">
                     <p>Filter Search</p>
                     <ul class="bg-dark">
-                        <li class="bg-dark">
-                            <label for="date">Enter Date</label>
-                            <input type="text" placeholder="1/1/2020" id="datetime" />
-                        </li>
-                        <li class="bg-dark">
-                            <label for="city">Enter City</label>
-                            <input type="text" placeholder="benton" id="city" />
-                        </li>
-                        <li class="bg-dark">
-                            <label for="state">Enter State</label>
-                            <input type="text" placeholder="ar" id="state" />
-                        </li>
-                        <li class="bg-dark">
-                            <label for="country">Enter Country</label>
-                            <input type="text" placeholder="us" id="country" />
-                        </li>
-                        <li class="bg-dark">
-                            <label for="shape">Enter Shape</label>
-                            <input type="text" placeholder="circle" id="shape" />
-                        </li>
-                        <li class="bg-dark">
-                        <button id="filter-btn" type="button" class="btn btn-dark">
-                            Filter Table
-                        </button>
-                        </li>
+                        <div class="form-group row">
+                            <li class="bg-dark">
+                                <label for="date">Enter Date</label>
+                                <input type="text" placeholder="1/1/2020" id="datetime" />
+                            </li>
+                        </div>
+                        <div class="form-group row">
+                            <li class="bg-dark">
+                                <label for="city">Enter City</label>
+                                <input type="text" placeholder="benton" id="city" />
+                            </li>
+                        </div>
+                        <div class="form-group row">
+                            <li class="bg-dark">
+                                <label for="state">Enter State</label>
+                                <input type="text" placeholder="ar" id="state" />
+                            </li>
+                        </div>
+                        <div class="form-group row">
+                            <li class="bg-dark">
+                                <label for="country">Enter Country</label>
+                                <input type="text" placeholder="us" id="country" />
+                            </li>
+                        </div>
+                        <div class="form-group row">
+                            <li class="bg-dark">
+                                <label for="shape">Enter Shape</label>
+                                <input type="text" placeholder="circle" id="shape" />
+                            </li>
+                        </div>
+                        <div class="form-group row">
+                            <li class="bg-dark">
+                            <button id="filter-btn" type="button" class="btn btn-outline-light">
+                                Filter Table
+                            </button>
+                            </li>
+                        </div>
                     </ul>
                 </form>
             </div>
